@@ -1,0 +1,89 @@
+@media (max-width: 1108px) {
+	.Video {
+		float: none;
+        width: 100%;
+        height: auto;
+		margin-right: 0;
+	}
+}
+
+@media (max-width: 800px) {
+	#SphinxLogo {
+		height: 77%;
+	}
+	
+	.images {
+		width: 100%;
+		height: auto;
+	}
+	
+	#ScreenshotsPanelGallery {
+		padding-top: 3%;
+	}
+		
+	.column {
+		width: 50%;
+	}
+	
+	.StyleContainers {
+		width: 85%;
+	}
+	
+	div.Scrollmenu {
+		width: 85%;
+		margin-bottom: 2%;
+	}
+	
+	.Video iframe {
+		height: 280px;
+	}
+}
+
+@media (max-width: 600px) {
+	#SphinxLogo {
+		width: 70%;
+	}
+	
+	.column {
+		height: 100%;
+	}
+	
+	.StyleContainers {
+		width: 95%;
+	}
+	
+	div.Scrollmenu {
+		width: 95%;
+		margin-bottom: 2%;
+	}
+	
+	#ScreenshotsPanelGallery {
+		padding-top: 5%;
+	}
+}
+
+@media (max-width: 330px) {
+	h1 {
+		font-size: 20px;
+	}
+	
+	h2 {
+		font-size: 15px;
+	}
+	
+	p {
+		font-size: 14px;
+	}
+	
+	ul {
+		font-size: 14px;
+	}
+
+	#ScreenshotsPanelGallery {
+		padding-top: 6%;
+	}
+	
+	.Video iframe {
+		height: 180px;
+	}
+}

@@ -1,0 +1,404 @@
+body {
+	background-color: #2C2021;
+	background: -webkit-gradient(linear, left top, left bottom, from(#2C2021), to(#423032));
+	background: -webkit-linear-gradient(#2C2021, #423032);
+	background: -moz-linear-gradient(top, #2C2021, #423032);
+	background: -ms-linear-gradient(#2C2021, #423032);
+	background: -o-linear-gradient(#2C2021, #423032);
+	background: linear-gradient(to bottom, #2C2021 0%, #423032 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2C2021', endColorstr='#423032');
+	margin: 0;
+}
+
+@font-face {
+	font-family: 'CaligulaDodgyMummy';
+	src: url('../fonts/CaligulaDodgyMummy.eot') format('embedded-opentype');
+	src: local('CaligulaDodgyMummy'),
+		url('../fonts/CaligulaDodgyMummy.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/CaligulaDodgyMummy.woff') format('woff'),
+		url('../fonts/CaligulaDodgyMummy.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+div.Scrollmenu {
+	width: 70%;
+	max-width: 1500px;
+	margin: auto;
+	margin-bottom: 0.254%;
+	background-image: url('../img/menutexture.png');
+	border: 1px solid #564D4D;
+	font-family: 'CaligulaDodgyMummy';
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 3px;
+	white-space: nowrap;
+	overflow: auto;
+	-webkit-overflow-scrolling: auto;
+}
+
+div.Scrollmenu a {
+	display: inline-block;
+	color: #DEA818;
+	padding: 14px;
+	text-decoration: none;
+}
+
+div.Scrollmenu a:hover {
+	color: #C66E27;
+	text-decoration: underline;
+}
+
+div.Scrollmenu a.active {
+	color: #C66E27;
+	text-decoration: underline;
+}
+
+h1 {
+	font-family: 'CaligulaDodgyMummy';
+	font-size: 23px;
+	color: #C6AB27;
+}
+
+h2 {
+	font-family: 'CaligulaDodgyMummy';
+	font-size: 18px;
+	color: #A66C2A;
+}
+
+.Notes{
+	color: #FC0303
+	
+}
+
+a:link {
+	color: #BF7F3F;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #885B2E;
+}
+
+a:hover {
+	color: #E8933F;
+}
+
+ul {
+	list-style: none;
+	color: white;
+}
+
+ul li::before {
+	content: "\2022";
+	color: #C6AB27;
+	font-weight: bold;
+	display: inline-block; 
+	width: 1em;
+	margin-left: -1em;
+}
+
+p {
+	color: white;
+}
+
+.TextRed {
+	color: red;
+}
+
+#SphinxLogo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+	max-width: 744px;
+}
+
+.IntroductionImage {
+	width: 100%;
+	max-width: 1700px;
+}
+
+.StyleContainers {
+	width: 70%;
+	max-width: 1500px;
+	margin: auto;
+	background-color: #3B2326;
+	border: 1px solid #564D4D;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-size: 17px;
+	line-height: 26px;
+	padding: 20px 50px 50px 50px;
+}
+
+.Buttons{
+	background-color: #A07136;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+}
+
+.Buttons:hover {
+	background-color: #775428
+}
+
+.Buttons:active {
+	background-color: #593F1F;
+	transform: translateY(1px);
+}
+
+.TutorialBox{
+	margin-top: 3%;
+}
+
+#CodeBox {
+	border: 1px solid #564D4D;
+	padding: 7px 20px 7px 20px;
+	background-color: #251718;
+    overflow-x: auto;
+    white-space: nowrap;
+	font-style: oblique;
+	margin-bottom: 4%;
+}
+
+#footer {
+	text-align: center;
+}
+
+.images {
+	height: 8%;
+}
+
+.accordion {
+	background-color: #211817;
+	color: #444;
+	cursor: pointer;
+	padding: 5px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+	border: 1px solid #564D4D;
+}
+
+.active, .accordion:hover {
+	background-color: #4a3634; 
+}
+
+.accordionChangelogs {
+	background-color: #211817;
+	color: #444;
+	cursor: pointer;
+	padding: 5px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+	border: 1px solid #564D4D;
+}
+
+.active, .accordionChangelogs:hover {
+	background-color: #4A3634; 
+}
+
+.panel {
+	padding: 0 18px;
+	padding-bottom: 10px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+}
+
+.bold {
+	font-weight: bold;
+	color: #E6E6E6;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.row > .column {
+	padding: 0 8px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.column {
+	float: left;
+	width: 25%;
+}
+
+.Gallery {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: black;
+}
+
+.Gallery-content {
+	position: relative;
+	background-color: #FEFEFE;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	max-width: 1200px;
+}
+
+.close {
+	color: white;
+	position: absolute;
+	top: 10px;
+	right: 25px;
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.SliderImages {
+	display: none;
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+	color: #F2F2F2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+img {
+	margin-bottom: -4px;
+}
+
+.caption-container {
+	text-align: center;
+	background-color: black;
+	padding: 2px 16px;
+	color: white;
+}
+
+.demo {
+	opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+	opacity: 1;
+}
+
+img.hover-shadow {
+	transition: 0.3s;
+}
+
+.hover-shadow:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#ScreenshotsPanelGallery {
+	padding-top: 2%;
+}
+
+.Video {
+	float: left;
+    width: 49%; 
+    height: 50%;
+}
+
+.Video iframe {
+	width: 100%;
+	max-width: 595px;
+	height: 380px;
+}
+
+.clear{
+    clear: both;
+}
+
+.ModDBBlock,
+.SteamWorkshopBlock {
+	margin-top: 5%;
+}
+
+.AlignCenterImage {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.ButtonCenter {
+	margin-top: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.DownloadButton {
+	background-color: #AB6913;
+	border: none;
+	color: white;
+	padding: 12px 30px;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+.DownloadButton:hover {
+	background-color: #7D4D0F;
+}
