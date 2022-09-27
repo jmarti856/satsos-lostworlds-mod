@@ -6,6 +6,34 @@ function copyToClipboard(id) {
     elem.select();
     document.execCommand("copy");
     document.body.removeChild(elem);
+	const targetDiv = document.getElementById("MessageAlert");
+	if (window.getComputedStyle(targetDiv).display === "none" || window.getComputedStyle(targetDiv).visibility === "hidden")
+	{
+		setTimeout(function() {$('#MessageAlert').fadeIn('fast');}, 500);
+		setTimeout(function() {$('#MessageAlert').fadeOut('fast');}, 3000);
+	}
+}
+
+function RunAccordion()
+{
+	var acc = document.getElementsByClassName("accordionChangelogs");
+	var i;
+	for (i = 0; i < acc.length; i++) 
+	{
+		acc[i].addEventListener("click", function()
+		{
+			this.classList.toggle("active");
+			var panel = this.nextElementSibling;
+			if (panel.style.maxHeight)
+			{
+				panel.style.maxHeight = null;
+			}
+			else
+			{
+				panel.style.maxHeight = panel.scrollHeight + "px";
+			}
+		});
+	}
 }
 
 function openModal() {

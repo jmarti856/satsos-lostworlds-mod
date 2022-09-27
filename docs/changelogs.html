@@ -13,6 +13,7 @@
 	<meta name="robots" content="all"/>
 	<link href="styles/styles.css" rel="stylesheet">
 	<link href="styles/styleResponsive.css" rel="stylesheet">
+	<script src="scripts/webScripts.js"></script> 
 	<script src="scripts/jquery-3.5.1.min.js"></script> 
 	<script> 
 		$(function(){
@@ -346,27 +347,10 @@
 				<li>Fixed a bug with the spitting toad in Sakkara 2.</li>
 			</ul>
 		</div>
-		<script>
-			var acc = document.getElementsByClassName("accordionChangelogs");
-			var i;
-			for (i = 0; i < acc.length; i++) 
-			{
-			  acc[i].addEventListener("click", function()
-			  {
-				this.classList.toggle("active");
-				var panel = this.nextElementSibling;
-				if (panel.style.maxHeight)
-				{
-				  panel.style.maxHeight = null;
-				}
-				else
-				{
-				  panel.style.maxHeight = panel.scrollHeight + "px";
-				}
-			  });
-			}
-		</script>
 	</div>
+	<script>
+		$(RunAccordion());
+	</script>	
 	<footer>
 		<div id="Footer"></div>
 	</footer>

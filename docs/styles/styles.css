@@ -21,6 +21,13 @@ body {
 	font-style: normal;
 }
 
+#MessageAlert{
+	width: auto;
+	height: auto;
+	background-color: #3D663C;
+	display: none;
+}
+
 div.Scrollmenu {
 	width: 70%;
 	max-width: 1500px;

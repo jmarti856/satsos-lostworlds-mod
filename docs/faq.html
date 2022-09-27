@@ -56,6 +56,9 @@
 				<div id="CodeBox">
 					<p id="ModPath">-dev -mod "../../workshop/content/606710/1614156774"</p>
 					<button class="Buttons" onclick="copyToClipboard('ModPath')">Copy text</button>
+					<div id="MessageAlert">
+						<p>Copied!</p>
+					</div>
 				</div>
 				<img class="images" src="img/SteamLaunchOptions.png" alt="LaunchGameOptions" type="image/png"/>
 			</div>
@@ -68,27 +71,10 @@
 				<img class="images" src="img/devMenu.png" alt="DevMenu" type="image/png"/>
 			</div>
 		</div>
-		<script>
-			var acc = document.getElementsByClassName("accordionChangelogs");
-			var i;
-			for (i = 0; i < acc.length; i++) 
-			{
-			  acc[i].addEventListener("click", function()
-			  {
-				this.classList.toggle("active");
-				var panel = this.nextElementSibling;
-				if (panel.style.maxHeight)
-				{
-				  panel.style.maxHeight = null;
-				}
-				else
-				{
-				  panel.style.maxHeight = panel.scrollHeight + "px";
-				}
-			  });
-			}
-		</script>
 	</div>
+	<script> 
+		$(RunAccordion());
+	</script> 
 	<footer>
 		<div id="Footer"></div>
 	</footer>
