@@ -1,11 +1,11 @@
 function copyToClipboard(id) {
-	var from = document.getElementById(id);
-	var range = document.createRange();
-	window.getSelection().removeAllRanges();
-	range.selectNode(from);
-	window.getSelection().addRange(range);
-	document.execCommand('copy');
-	window.getSelection().removeAllRanges();
+    var text = document.getElementById(id).innerText;
+    var elem = document.createElement("textarea");
+    document.body.appendChild(elem);
+    elem.value = text;
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
 }
 
 function openModal() {
