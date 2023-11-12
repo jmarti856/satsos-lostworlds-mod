@@ -28,58 +28,61 @@
 	</header>
 	<div class="StyleContainers" id="InstallationGuide">
 		<h1>How to play</h1>
-		<p>The mod is available in two platforms, ModDB and Steam workshop. We recomend the Steam version because the mod updates automatically, the other one needs to execute a .cmd file each time.</p>
-		<div class="SteamWorkshopBlock">
-			<h2>Steam Workshop (automatic updates)</h2>
-			<div class="TutorialBox">
-				<p>1 - Join the beta-testing <a href="https://steamcommunity.com/groups/satcm" target="_blank">Workshop group</a> for the game, so that you can see the Workshop tab in the next step.</p>
-				<img class="images" src="img/satcm_group.png" alt="BetaWorkshopGroup" type="image/png"/>
-			</div>
-			<div class="TutorialBox">
-				<p>2 - Ensure that you are logged-in and subscribe to the <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1614156774" target="_blank">Workshop version of the mod</a>.</p>
-				<img class="images" src="img/SteamModVersion.png" alt="WorkshopVersionMod" type="image/png"/>
-			</div>
-			<div class="TutorialBox">
-				<p>3 - If the game is installed then it should start to download right away. In your Steam Library right-click the Sphinx entry, select <span class="bold">Properties</span>.</p>
-				<img class="images" src="img/SteamProperties.png" alt="SteamProperties" type="image/png"/>
-			</div>
-			<div class="TutorialBox">
-				<p>4 - Click on <span class="bold">Launch options...</span></p>
-				<img class="images" src="img/SteamLaunchOptions.png" alt="LaunchGameOptions" type="image/png"/>
-			</div>
-			<div class="TutorialBox">
-				<p>5 - Paste the following code in the input box that appears and accept.</p>
-				<img class="images" src="img/ModRoute.png" alt="LaunchParameters" type="image/png"/>
-				<div id="CodeBox">
-					<p id="ModPath">-mod "../../workshop/content/606710/1614156774"</p>
-					<button class="Buttons" onclick="copyToClipboard('ModPath')">Copy text</button>
-					<div id="MessageAlert">
-						<p>Copied!</p>
+		<p>The mod is available in two flavors; Mod DB or Steam Workshop. We recomend the Steam version because the mod updates automatically, the other one needs you to execute a <tt>.cmd</tt> launcher file each time.</p>
+		<details class="SteamWorkshopBlock" open>
+			<summary><h2 style='display: inline'>Steam Workshop (automatic updates)</h2></summary>
+			<ol>
+				<li class="TutorialBox">
+					<p>Join the special beta-testing <a href="https://steamcommunity.com/groups/satcm" target="_blank">Workshop group</a> for the game, so that you can actually see the Workshop tab and page in the next step.</p>
+					<img class="images" src="img/satcm_group.png" alt="BetaWorkshopGroup" type="image/png"/>
+				</li>
+				<li class="TutorialBox">
+					<p>Ensure that you are logged-in and subscribe to the <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1614156774" target="_blank">Workshop version of the mod</a>.</p>
+					<img class="images" src="img/SteamModVersion.png" alt="WorkshopVersionMod" type="image/png"/>
+				</li>
+				<li class="TutorialBox">
+					<p>If the game is installed, then the mod should start to download right away. In your <i>Steam Library</i> right-click the Sphinx entry, select <i><strong>Properties</strong></i>, a dialog will open.</p>
+					<img class="images" src="img/SteamProperties.png" alt="SteamProperties" type="image/png"/>
+				</li>
+				<li class="TutorialBox">
+					<p>Click on <span class="bold">Launch options...</span></p>
+					<img class="images" src="img/SteamLaunchOptions.png" alt="LaunchGameOptions" type="image/png"/>
+					<p>...then paste the following code in the input box that appears, and accept.</p>
+					<img class="images" src="img/ModRoute.png" alt="LaunchParameters" type="image/png"/>
+					<div id="CodeBox">
+						<p id="ModPath">-mod "../../workshop/content/606710/1614156774"</p>
+						<button class="Buttons" onclick="copyToClipboard('ModPath')">Copy text</button>
+						<div id="MessageAlert">
+							<p>Copied!</p>
+						</div>
 					</div>
-				</div>
-				<p>6 - Run the game, the mod should start. To disable the mod remove the launch options and it will run as normal.</p>
-			</div>
-			<div class="TutorialBox">
-				<h3><span class="Notes">Important note</span></h3>
-				<p>If you are playing the last version of the mod, you have to switch to the last beta game branch</p>
-				<img class="images" src="img/modGameBeta.png" alt="BetaSphinxBranch" type="image/png"/>
-			</div>
-		</div>
-		<div class="ModDBBlock">
-			<h2>Moddb (Manually-downloaded version)</h2>
-			<div class="TutorialBox">
-				<p>1 - Download the latest mod .zip file from <a href="https://www.moddb.com/mods/sphinx-and-the-shadow-of-set/downloads" target="_blank">Mod DB</a>.</p>
-				<img class="images" src="img/ModdbDownload.png" alt="ModdbSphinx" type="image/png"/>
-			</div>
-			<div class="TutorialBox">
-				<p>2 - Extract the compressed files anywhere into its own folder.</p>
-				<img class="images" src="img/ModdbModFolder.png" alt="SphinxModFolder" type="image/png"/>
-			</div>
-			<div class="TutorialBox">
-				<p>3 - Start the mod by double-clicking on <span class="bold">launch-sphinx-mod.cmd</span>, if the game is already installed it will start with the mod right away without changing anything in the filesystem, you can still play the base game normally. If you want, you can also create a desktop shortcut for the tiny mod launcher.</p>
-				<img class="images" src="img/SwyterModLauncher.png" alt="CMD Mod launcher" type="image/png"/>
-			</div>
-		</div>
+				</li>
+				<li class="TutorialBox">
+					<p>If you are playing the latest version of the mod you need to switch your game version to the <i><tt>beta</tt></i> Steam branch instead of the default one, as that one tends to get the engine fixes and features this mod needs to work first. While in the game <i><strong>Properties</strong></i> window go to the <i><strong>Betas</strong></i> tab, choose the <i><tt>beta - Future Sphinx version</tt></i> entry in the combobox, then this time the base game itself should update once you close the <i>Properties</i> window.</p>
+					<img class="images" src="img/modGameBeta.png" alt="BetaSphinxBranch" type="image/png"/>
+				</li>
+				<li class="TutorialBox">
+					<p>Run the game, the mod should start. To disable the mod, just remove the launch options you added in the fourth step and the game will run as normal.</p>
+				</li>
+			</ol>
+		</details>
+		<details class="ModDBBlock" open>
+			<summary><h2 style='display: inline'>Mod DB (Manually-downloaded version, for Steam or GOG)</h2></summary>
+			<ol>
+				<li class="TutorialBox">
+					<p>Download the latest mod .zip file from <a href="https://www.moddb.com/mods/sphinx-and-the-shadow-of-set/downloads" target="_blank">Mod DB</a>.</p>
+					<img class="images" src="img/ModdbDownload.png" alt="ModdbSphinx" type="image/png"/>
+				</li>
+				<li class="TutorialBox">
+					<p>Extract the compressed files anywhere into its own folder.</p>
+					<img class="images" src="img/ModdbModFolder.png" alt="SphinxModFolder" type="image/png"/>
+				</li>
+				<li class="TutorialBox">
+					<p>Start the mod by double-clicking on <span class="bold">launch-sphinx-mod.cmd</span>, if the game is already installed it will start with the mod right away without changing anything in the filesystem, you can still play the base game normally. If you want, you can also create a desktop shortcut for the tiny mod launcher.</p>
+					<img class="images" src="img/SwyterModLauncher.png" alt="CMD Mod launcher" type="image/png"/>
+				</li>
+			</ol>
+		</details>
 	</div>
 	<footer>
 		<div id="Footer"></div>
