@@ -106,6 +106,21 @@ ul li::before {
 	margin-left: -1em;
 }
 
+/* swy: for the install guide numbered list sections */
+ol li, details, details h2 {
+	color: #C3852F;
+	text-shadow: 0 0 2px black;
+}
+ol li { /* swy: make the numbers in the list bold */
+	font-weight: bold;
+	font-style: oblique;
+}
+
+ol li p { /* swy: reset the previous style for the inner non-numeric text */
+	font-weight: initial;
+	font-style: initial;
+}
+
 p {
 	color: white;
 }
