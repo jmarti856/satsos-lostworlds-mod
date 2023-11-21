@@ -32,7 +32,7 @@
 		<!------------------------------------------------------[1 - How to Report a bug]------------------------------------------------------>
 		<button id=report class="accordionChangelogs"><h2>I've found a bug or problem, or I want to suggest something. How to report it or contact the mod developer?</h2></button>
 		<div class="panel">
-			<p>Currently there is only one way to report bugs, via the game's official <a href="https://discord.gg/sphinx">Discord chat server</a>. We have a <tt>#shadow-of-set</tt> channel where you can report any bugs that you find while playing, you can also notify me or send a private message by pinging my username (@jmarti856#4332).</p>
+			<p>Currently there is only one way to report bugs, via the game's official <a href="https://discord.gg/sphinx">Discord chat server</a>. We have a <tt>#shadow-of-set</tt> channel where you can report any bugs that you find while playing, you can also notify me or send a private message by pinging my username (<tt>@jmarti856#4332</tt>).</p>
 		</div>
 
 		<!------------------------------------------------------[2 - How to Enable Dev Mode]------------------------------------------------------>
@@ -40,37 +40,39 @@
 		<div class="panel">
 			<p>The PC version of the game comes with a handy <tt>-dev</tt> mode option that can be useful to skip ahead whenever you get stuck, or when the game softlocks or there is any other bug preventing you continuing your playthrough.</p>
 			<p>To enable the <tt>-dev</tt> mode you need to launch the game with the <tt>-dev</tt> parameter as the first command-line option, here there is a guide for the Steam version of the game, but these parameters are also valid for the GOG variant.</p>
-			<div class="TutorialBox">
-				<p>1 - First we need to go to Steam and find the game, then click on <i>Properties</i>:</p>			
-				<img class="images" src="img/SteamProperties.png" alt="SteamProperties" type="image/png">
-			</div>
-			<div class="TutorialBox">
-				<p>2 - Click on <span class="bold">Launch options...</span></p>
-				<img class="images" src="img/SteamLaunchOptions.png" alt="LaunchGameOptions" type="image/png"/>
-			</div>
-			<div class="TutorialBox">
-				<p>3 - To keep lauching the mod and add the debug functionality, we will need to use two parameters:</p>
-				<ul>
-					<li>The first one is just to enable the dev mode, we only have to type <span class="bold"><tt>-dev</tt></span>.</li>
-					<li>The second one is used to launch the mod itself. The format is <span class="bold"><tt>-mod "PathToFolder"</tt></span>, either a relative or absolute path. It is also very important that the path to the folder uses the quotation marks to avoid problems.</li>
-				</ul>
-				<div id="CodeBox">
-					<p id="ModPath">-dev -mod "../../workshop/content/606710/1614156774"</p>
-					<button class="Buttons" onclick="copyToClipboard('ModPath')">Copy text</button>
-					<div id="MessageAlert">
-						<p>Copied!</p>
+			<ol>
+				<li class="TutorialBox">
+					<p><!-- 1 --> First we need to go to our Steam Library and find the game, then right-click and go to <i>Properties</i>:</p>			
+					<img class="images" src="img/SteamProperties.png" alt="SteamProperties" type="image/png">
+				</li>
+				<li class="TutorialBox">
+					<p><!-- 2 --> Click on <span class="bold">Launch options...</span></p>
+					<img class="images" src="img/SteamLaunchOptions.png" alt="LaunchGameOptions" type="image/png"/>
+				</li>
+				<li class="TutorialBox">
+					<p><!-- 3 --> To keep lauching the mod and add the debug functionality, we will need to use two parameters:</p>
+					<ul>
+						<li>The first one is just to enable the dev mode, we only have to type <span class="bold"><tt>-dev</tt></span>.</li>
+						<li>The second one is used to launch the mod itself. The format is <span class="bold"><tt>-mod "PathToFolder"</tt></span>, either a relative or absolute path. It is also very important that the path to the folder uses the quotation marks to avoid problems.</li>
+					</ul>
+					<div id="CodeBox">
+						<p id="ModPath">-dev -mod "../../workshop/content/606710/1614156774"</p>
+						<button class="Buttons" onclick="copyToClipboard('ModPath')">Copy text</button>
+						<div id="MessageAlert">
+							<p>Copied!</p>
+						</div>
 					</div>
-				</div>
-				<img class="images" src="img/SteamLaunchOptions.png" alt="LaunchGameOptions" type="image/png"/>
-			</div>
-			<div class="TutorialBox">
-				<p>4 - If you also want to modify the inventory or the game objectives, you also need to create a folder called <span class="bold">Albert</span> in you game installation directory. Inside this folder, we have to put the <span class="bold">Hashcodes.h</span> file with the human-readable tags that the game will load, if you don't have the Authoring Tools DLC installed, you can get the file from this <a href="https://raw.githubusercontent.com/eurotools/hashcodes/main/sphinx/albert/hashcodes.h" target="_blank">link</a>.</p>
-				<img class="images" src="img/gameInstallDir.png" alt="GameInstallationDirectory" type="image/png"/>
-			</div>
-			<div class="TutorialBox">
-				<p>5 - After this, when we right-click in the game window, a context menu with a level selector and other functions should appear:</p>
-				<img class="images" src="img/devMenu.png" alt="DevMenu" type="image/png"/>
-			</div>
+					<img class="images" src="img/SteamLaunchOptions.png" alt="LaunchGameOptions" type="image/png"/>
+				</li>
+				<li class="TutorialBox">
+					<p><!-- 4 --> If you also want to modify the inventory or the game objectives via the Watcher debug window, you also need to create a folder called <span class="bold">Albert</span> in you game installation directory. Inside this folder, we have to put the <span class="bold">Hashcodes.h</span> file with the human-readable tags that the game will load, if you don't have the Authoring Tools DLC installed, you can get the file from this <a href="https://raw.githubusercontent.com/eurotools/hashcodes/main/sphinx/albert/hashcodes.h" target="_blank">link</a>.</p>
+					<img class="images" src="img/gameInstallDir.png" alt="GameInstallationDirectory" type="image/png"/>
+				</li>
+				<li class="TutorialBox">
+					<p><!-- 5 --> After this, when we right-click in the game window, a context menu with a level selector and other functions (like the option to open the Watcher) should appear:</p>
+					<img class="images" src="img/devMenu.png" alt="DevMenu" type="image/png"/>
+				</li>
+			</ol>
 		</div>
 	</div>
 	<script> 

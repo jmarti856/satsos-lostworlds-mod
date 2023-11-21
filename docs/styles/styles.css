@@ -107,16 +107,16 @@ ul li::before {
 }
 
 /* swy: for the install guide numbered list sections */
-ol li, details, details h2 {
+ol > li, details, details h2 {
 	color: #C3852F;
 	text-shadow: 0 0 2px black;
 }
-ol li { /* swy: make the numbers in the list bold */
+ol > li { /* swy: make the numbers in the list bold */
 	font-weight: bold;
 	font-style: oblique;
 }
 
-ol li p { /* swy: reset the previous style for the inner non-numeric text */
+ol > li * { /* swy: reset the previous style for the inner non-numeric text */
 	font-weight: initial;
 	font-style: initial;
 }
@@ -237,7 +237,7 @@ p {
 .panel {
 	padding: 0 18px;
 	padding-bottom: 10px;
-	max-height: 0;
+	/*! max-height: 0; */
 	overflow: hidden;
 	transition: max-height 0.2s ease-out;
 }
