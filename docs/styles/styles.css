@@ -116,7 +116,7 @@ ol > li { /* swy: make the numbers in the list bold */
 	font-style: oblique;
 }
 
-ol > li * { /* swy: reset the previous style for the inner non-numeric text */
+ol > li > * { /* swy: reset the previous style for the inner non-numeric text */
 	font-weight: initial;
 	font-style: initial;
 }
