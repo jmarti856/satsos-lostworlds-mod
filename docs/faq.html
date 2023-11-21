@@ -30,14 +30,14 @@
 		<h1>FAQ</h1>
 		<p>Here are some of the most common questions for people playing the mod.</p>
 		<!------------------------------------------------------[1 - How to Report a bug]------------------------------------------------------>
-		<button id=report class="accordionChangelogs"><h2>I've found a bug or problem, or I want to suggest something. How to report it or contact the mod developer?</h2></button>
-		<div class="panel">
-			<p>Currently there is only one way to report bugs, via the game's official <a href="https://discord.gg/sphinx">Discord chat server</a>. We have a <i><tt>#shadow-of-set</tt></i> channel where you can report any bugs that you find while playing, you can also notify me or send a private message by pinging my username (<i><tt>@jmarti856#4332</tt></i>).</p>
-		</div>
+		<details open id=report>
+			<summary><h2 style='display: inline'><i>Reporting bugs</i> - <p style='display: inline'>I've found a bug or problem, or I want to suggest something. How to report it or contact the mod developer?</p></h2></summary>
+			<p>Currently there is only one way to report bugs; via the game's official <a href="https://discord.gg/sphinx">Discord chat server</a>. We have a <i><tt>#shadow-of-set</tt></i> channel where you can report any bugs that you find while playing, you can also notify me or send a private message by pinging my username (<i><tt>@jmarti856#4332</tt></i>).</p>
+		</details>
 
 		<!------------------------------------------------------[2 - How to Enable Dev Mode]------------------------------------------------------>
-		<button id=dev class="accordionChangelogs"><h2>I'd love to have cheats, fly around and load levels. Any way to have this kind of dev functionality?</h2></button>
-		<div class="panel">
+		<details open id=dev>
+			<summary><h2 style='display: inline'><i>Development mode</i> - <p style='display: inline'>I'd love to have cheats, fly around and load levels. Any way to have this kind of dev functionality?</p></h2></summary>
 			<p>The PC version of the game comes with a handy <tt>-dev</tt> mode option that can be useful to skip ahead whenever you get stuck, or when the game softlocks or there is any other bug preventing you continuing your playthrough.</p>
 			<p>To enable the <tt>-dev</tt> mode you need to launch the game with the <tt>-dev</tt> parameter as the first command-line option, here there is a guide for the Steam version of the game, but these parameters are also valid for the GOG variant.</p>
 			<ol>
@@ -73,7 +73,7 @@
 					<img class="images" src="img/devMenu.png" alt="DevMenu" type="image/png"/>
 				</li>
 			</ol>
-		</div>
+		</details>
 	</div>
 	<script> 
 		$(RunAccordion());
