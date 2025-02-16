@@ -71,7 +71,36 @@ h1 {
 h2 {
 	font-family: 'CaligulaDodgyMummy';
 	font-size: 18px;
+	color: #BF8613;
+}
+
+h3 {
+	font-family: 'CaligulaDodgyMummy';
+	font-size: 16px;
 	color: #A66C2A;
+}
+
+.list-container {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.list-container p {
+	flex: 1 1 calc(50% - 10px);
+	margin: 2px 0;
+}
+
+.image-container {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.image-container img {
+	display: block;
+	margin: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .Notes{

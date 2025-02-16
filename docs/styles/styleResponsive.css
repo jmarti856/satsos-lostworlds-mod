@@ -7,6 +7,12 @@
 	}
 }
 
+@media (max-width: 600px) {
+	.list-container p {
+		flex: 1 1 100%;
+	}
+}
+
 @media (max-width: 800px) {
 	#SphinxLogo {
 		height: 77%;
