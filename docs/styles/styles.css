@@ -1,5 +1,5 @@
 body {
-	background-color: #2C2021;
+	background-color: #261B1C;
 	background: -webkit-gradient(linear, left top, left bottom, from(#2C2021), to(#423032));
 	background: -webkit-linear-gradient(#2C2021, #423032);
 	background: -moz-linear-gradient(top, #2C2021, #423032);
@@ -19,6 +19,18 @@ body {
 		url('../fonts/CaligulaDodgyMummy.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
+}
+
+@font-face {
+    font-family: 'Verdana';
+    src: url('../fonts/Verdana.eot');
+    src: local('Verdana'),
+        url('../fonts/Verdana.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Verdana.woff2') format('woff2'),
+        url('../fonts/Verdana.woff') format('woff'),
+        url('../fonts/Verdana.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 #MessageAlert{
@@ -63,21 +75,81 @@ div.Scrollmenu a.active {
 }
 
 h1 {
-	font-family: 'CaligulaDodgyMummy';
+	font-family: 'CaligulaDodgyMummy', sans-serif;
 	font-size: 23px;
-	color: #C6AB27;
+	color: #FF992E;
+	display: inline-block;
+	background: linear-gradient(to right,#FF992E 0%,#FFCD38 50%,#FF992E 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF992E',endColorstr='#FFCD38',GradientType=1);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	font-weight: bold;
+	text-shadow: none;
 }
 
 h2 {
 	font-family: 'CaligulaDodgyMummy';
 	font-size: 18px;
-	color: #BF8613;
+	color: #CE8F36;
 }
 
 h3 {
 	font-family: 'CaligulaDodgyMummy';
 	font-size: 16px;
 	color: #A66C2A;
+}
+
+a:link {
+	color: #CE8E37;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #E2BC88;
+}
+
+a:hover {
+	color: #E2BC88;
+	text-decoration: underline;
+}
+
+ul {
+	list-style: none;
+	color: white;
+}
+
+ul li::before {
+	content: "\2022";
+	color: #C6AB27;
+	font-weight: bold;
+	display: inline-block; 
+	width: 1em;
+	margin-left: -1em;
+}
+
+/* swy: for the install guide numbered list sections */
+ol > li, details, details h2 {
+	color: #CE8F36;
+	text-shadow: 0 0 2px black;
+}
+ol > li { /* swy: make the numbers in the list bold */
+	font-weight: bold;
+	font-style: oblique;
+}
+
+ol > li > * { /* swy: reset the previous style for the inner non-numeric text */
+	font-weight: initial;
+	font-style: initial;
+}
+
+p {
+	font-family: 'Verdana';
+	color: white;
+}
+
+.TextRed {
+	color: red;
 }
 
 .list-container {
@@ -104,70 +176,16 @@ h3 {
 }
 
 .Notes{
-	color: #FC0303
-	
-}
-
-a:link {
-	color: #C3852F;
-	text-decoration: none;
-}
-
-a:visited {
-	color: #E2BC88;
-}
-
-a:hover {
-	color: #D39A4C;
-}
-
-ul {
-	list-style: none;
-	color: white;
-}
-
-ul li::before {
-	content: "\2022";
-	color: #C6AB27;
-	font-weight: bold;
-	display: inline-block; 
-	width: 1em;
-	margin-left: -1em;
-}
-
-/* swy: for the install guide numbered list sections */
-ol > li, details, details h2 {
-	color: #C3852F;
-	text-shadow: 0 0 2px black;
-}
-ol > li { /* swy: make the numbers in the list bold */
-	font-weight: bold;
-	font-style: oblique;
-}
-
-ol > li > * { /* swy: reset the previous style for the inner non-numeric text */
-	font-weight: initial;
-	font-style: initial;
-}
-
-p {
-	color: white;
-}
-
-.TextRed {
-	color: red;
-}
-
-#SphinxLogo {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 30%;
-	max-width: 744px;
+	color: #FC0303	
 }
 
 .IntroductionImage {
 	width: 100%;
+	max-width: 1700px;
+}
+
+.WalktrhoughImage {
+	width: 50%;
 	max-width: 1700px;
 }
 
@@ -207,20 +225,6 @@ p {
 
 .TutorialBox{
 	margin-top: 3%;
-}
-
-#CodeBox {
-	border: 1px solid #564D4D;
-	padding: 7px 20px 7px 20px;
-	background-color: #251718;
-    overflow-x: auto;
-    white-space: nowrap;
-	font-style: oblique;
-	margin-bottom: 4%;
-}
-
-#footer {
-	text-align: center;
 }
 
 .images {
@@ -405,10 +409,6 @@ img.hover-shadow {
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#ScreenshotsPanelGallery {
-	padding-top: 2%;
-}
-
 .Video {
 	float: left;
     width: 49%; 
@@ -453,4 +453,30 @@ img.hover-shadow {
 
 .DownloadButton:hover {
 	background-color: #7D4D0F;
+}
+
+#ScreenshotsPanelGallery {
+	padding-top: 2%;
+}
+
+#CodeBox {
+	border: 1px solid #564D4D;
+	padding: 7px 20px 7px 20px;
+	background-color: #251718;
+    overflow-x: auto;
+    white-space: nowrap;
+	font-style: oblique;
+	margin-bottom: 4%;
+}
+
+#footer {
+	text-align: center;
+}
+
+#SphinxLogo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 30%;
+	max-width: 744px;
 }
