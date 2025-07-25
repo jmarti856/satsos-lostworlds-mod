@@ -148,7 +148,7 @@ a:hover {
 ul {
 	list-style: none;
 	color: #2c1d0e;
-	padding-left: 0;
+	padding-left: 2%;
   	margin-left: 0;
 }
 
@@ -269,6 +269,8 @@ p {
 	margin: auto;
 	max-width: 100%;
 	height: auto;
+	border-radius: 8px;
+	box-shadow: 0 10px 25px rgba(255, 200, 0, 0.25);
 }
 
 .Notes{
@@ -278,11 +280,15 @@ p {
 .IntroductionImage {
 	width: 100%;
 	max-width: 1700px;
+	border-radius: 8px;
+	box-shadow: 0 10px 25px rgba(255, 200, 0, 0.55);
+	transition: box-shadow 0.3s ease, transform 0.3s ease;
+	margin-bottom: 5%;
 }
 
-.WalktrhoughImage {
-	width: 50%;
-	max-width: 1700px;
+.IntroductionImage:hover {
+	box-shadow: 0 12px 40px rgba(255, 200, 0, 0.55);
+	transform: scale(1.01);
 }
 
 .StyleContainers {
@@ -331,6 +337,8 @@ p {
 
 .images {
 	height: 8%;
+	border-radius: 8px;
+	box-shadow: 0 10px 25px rgba(255, 200, 0, 0.25);
 }
 
 .accordion {
