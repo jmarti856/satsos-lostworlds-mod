@@ -342,7 +342,7 @@ p {
 	background-color: #F1E4CB;
 	border: 2px solid #FEFBF1;
 	border-radius: 8px;
-	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	font-family: 'Verdana', serif;
 	font-size: 17px;
 	line-height: 26px;
 	padding: 20px 50px 50px 50px;
@@ -682,4 +682,82 @@ img.hover-shadow {
 
 .footer-links i {
 	font-size: 15px;
+}
+
+.changelog-wrapper {
+	max-width: 1000px;
+	margin: 40px auto;
+	padding: 20px;
+	background: #fff7e6;
+	border-radius: 12px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+	display: block;
+	margin: 20px auto;
+	padding: 12px 18px;
+	border-radius: 10px;
+	border: 1px solid #e0c478;
+	font-size: 16px;
+	width: 100%;
+	max-width: 400px;
+}
+
+.year-section {
+	margin-top: 30px;
+}
+
+.year-header {
+	font-size: 24px;
+	font-weight: bold;
+	cursor: pointer;
+	padding: 10px;
+	background: #fdf4e0;
+	border-radius: 12px;
+	box-shadow: 0 8px 20px rgba(255, 200, 0, 0.25);
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.year-header:hover {
+	background: #ffe9b0;
+}
+
+.year-header .arrow {
+	display: inline-block;
+	transition: transform 0.3s ease;
+}
+
+.year-header.active .arrow {
+	transform: rotate(90deg);
+}
+
+.update-entry {
+	margin: 10px 0;
+	padding: 12px 16px;
+	background: #fff;
+	border: 1px solid #e0c478;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 0.2s ease;
+}
+
+.update-entry:hover {
+	background: #fff2cc;
+}
+
+.update-details {
+	display: none;
+	margin-top: 10px;
+	padding: 10px 20px;
+	background: #fffdf7;
+	border-left: 3px solid #e0c478;
+	font-size: 15px;
+}
+
+.hidden {
+	display: none;
 }
