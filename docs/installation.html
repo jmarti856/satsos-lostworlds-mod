@@ -31,8 +31,12 @@
 		<h1>How to play</h1>
 		<p>The mod is available in three versions: <a href="https://www.moddb.com/mods/sphinx-and-the-shadow-of-set/downloads" target="_blank">Mod DB</a>, <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1614156774" target="_blank">Steam Workshop</a> and <a href="https://www.nexusmods.com/sphinxandthecursedmummy/mods/3" target="_blank">Nexus Mods</a>. We highly recommend the Steam version, as it provides automatic updates, ensuring you always have the latest improvements and bug fixes without any extra steps.</p>
 		<p>If you choose the <a href="https://www.moddb.com/mods/sphinx-and-the-shadow-of-set/downloads" target="_blank">Mod DB</a> or <a href="https://www.nexusmods.com/sphinxandthecursedmummy/mods/3" target="_blank">Nexus Mods</a> version, keep in mind that you will need to manually launch the mod each time by running a .cmd launcher file. While both versions offer the full experience, the <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1614156774" target="_blank">Steam Workshop</a> edition offers a more seamless and hassle-free way to enjoy the mod.</p>
-		<details class="SteamWorkshopBlock" open>
-			<summary><h2 style='display: inline'>Steam Workshop (automatic updates)</h2></summary>
+		<div class="accordionBox">
+		  <div class="accordionHeader" onclick="this.parentNode.classList.toggle('active')">
+			<span>🛠 Steam Workshop (automatic updates)</span>
+			<span class="accordionIcon">▶</span>
+		  </div>
+		  <div class="accordionContent">
 			<ol>
 				<li class="TutorialBox">
 					<p>Join the special beta-testing <a href="https://steamcommunity.com/groups/satcm" target="_blank">Workshop group</a> for the game, so that you can actually see the Workshop tab and page in the next step.</p>
@@ -67,9 +71,14 @@
 					<p>Run the game, the mod should start. To disable the mod, just remove the launch options you added in the fourth step and the game will run as normal.</p>
 				</li>
 			</ol>
-		</details>
-		<details class="ModDBBlock" open>
-			<summary><h2 style='display: inline'>Mod DB (Manually-downloaded version, for Steam or GOG)</h2></summary>
+		  </div>
+		</div>
+		<div class="accordionBox">
+		  <div class="accordionHeader" onclick="this.parentNode.classList.toggle('active')">
+			<span>🧩 Mod DB (manual install)</span>
+			<span class="accordionIcon">▶</span>
+		  </div>
+		  <div class="accordionContent">
 			<ol>
 				<li class="TutorialBox">
 					<p>Download the latest mod <tt>.zip</tt> file from <a href="https://www.moddb.com/mods/sphinx-and-the-shadow-of-set/downloads" target="_blank">Mod DB</a>.</p>
@@ -84,9 +93,14 @@
 					<img class="images" src="img/SwyterModLauncher.png" alt="CMD Mod launcher" type="image/png"/>
 				</li>
 			</ol>
-		</details>
-		<details class="NexusModsBlock" open>
-			<summary><h2 style='display: inline'>Nexus Mods (Manually-downloaded version, for Steam or GOG)</h2></summary>
+		  </div>
+		</div>
+		<div class="accordionBox">
+		  <div class="accordionHeader" onclick="this.parentNode.classList.toggle('active')">
+			<span>🧱 Nexus Mods (manual install)</span>
+			<span class="accordionIcon">▶</span>
+		  </div>
+		  <div class="accordionContent">
 			<ol>
 				<li class="TutorialBox">
 					<p>Download the latest mod <tt>.zip</tt> file from <a href="https://www.nexusmods.com/sphinxandthecursedmummy/mods/3" target="_blank">Nexus Mods</a>.</p>
@@ -101,7 +115,8 @@
 					<img class="images" src="img/SwyterModLauncher.png" alt="CMD Mod launcher" type="image/png"/>
 				</li>
 			</ol>
-		</details>
+		  </div>
+		</div>
 	</div>
 	<footer>
 		<div id="Footer"></div>

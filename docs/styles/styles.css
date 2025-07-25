@@ -1,17 +1,17 @@
 body {
-  margin: 0;
-  font-family: Verdana, Geneva, sans-serif;
-  font-size: 15px;
-  color: #2c1d0e;
-  line-height: 1.6; 
-  background-color: #D6BB90;
-  background: -webkit-gradient(linear, left top, left bottom, from(#D6BB90), to(#CFB78C));
-  background: -webkit-linear-gradient(top, #D6BB90, #CFB78C);
-  background: -moz-linear-gradient(top, #D6BB90, #CFB78C);
-  background: -ms-linear-gradient(top, #D6BB90, #CFB78C);
-  background: -o-linear-gradient(top, #D6BB90, #CFB78C);
-  background: linear-gradient(to bottom, #D6BB90 0%, #CFB78C 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D6BB90', endColorstr='#CFB78C');
+	margin: 0;
+	font-family: 'Verdana', serif;
+	font-size: 15px;
+	color: #2c1d0e;
+	line-height: 1.6; 
+	background-color: #D6BB90;
+	background: -webkit-gradient(linear, left top, left bottom, from(#D6BB90), to(#CFB78C));
+	background: -webkit-linear-gradient(top, #D6BB90, #CFB78C);
+	background: -moz-linear-gradient(top, #D6BB90, #CFB78C);
+	background: -ms-linear-gradient(top, #D6BB90, #CFB78C);
+	background: -o-linear-gradient(top, #D6BB90, #CFB78C);
+	background: linear-gradient(to bottom, #D6BB90 0%, #CFB78C 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D6BB90', endColorstr='#CFB78C');
 }
 
 @font-face {
@@ -119,7 +119,7 @@ h1 {
 h2 {
 	font-family: 'CaligulaDodgyMummy', sans-serif;
 	font-size: 22px;
-	color: #8A5B2F; /* marrón medio elegante */
+	color: #8A5B2F;
 }
 
 h3 {
@@ -131,9 +131,53 @@ h3 {
 }
 
 a:link {
-	color: #C26E27; /* cobre anaranjado */
+	color: #C26E27;
 	text-decoration: none;
 	transition: color 0.2s ease;
+}
+
+.accordionBox {
+	background: #fdf4e0;
+	border-radius: 12px;
+	box-shadow: 0 8px 20px rgba(255, 200, 0, 0.25);
+	margin: 20px 0;
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+
+.accordionHeader {
+	padding: 18px 24px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: bold;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: #fff4d6;
+	border-bottom: 1px solid #f0d28b;
+}
+
+.accordionHeader:hover {
+	background: #ffe9b0;
+}
+
+.accordionIcon {
+	transition: transform 0.3s ease;
+}
+
+.accordionContent {
+	padding: 20px;
+	display: none;
+	font-size: 16px;
+	line-height: 1.6;
+}
+
+.accordionBox.active .accordionContent {
+	display: block;
+}
+
+.accordionBox.active .accordionIcon {
+	transform: rotate(90deg);
 }
 
 a:visited {
@@ -163,12 +207,12 @@ ul li {
 ul li::before {
 	content: "";
 	position: absolute;
-	left: 0.3em; /* más cerca del texto */
-	top: 0.55em; /* mejor alineado verticalmente */
+	left: 0.3em;
+	top: 0.55em;
 	width: 6px;
 	height: 6px;
 	border-radius: 2px;
-	background-color: #D8A046; /* Dorado suave */
+	background-color: #D8A046;
 	box-shadow: 0 1px 2px rgba(0,0,0,0.3);
 	transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -179,49 +223,49 @@ ul li:hover::before {
 }
 
 ol {
-  counter-reset: section;
-  list-style: none;
-  padding-left: 0;
-  margin-left: 0;
+	counter-reset: section;
+	list-style: none;
+	padding-left: 0;
+	margin-left: 0;
 }
 
 ol > li {
-  position: relative;
-  padding-left: 2.2em;
-  margin-bottom: 0.6em;
-  font-family: Verdana, sans-serif;
-  color: #2c1d0e;
-  font-weight: normal;
-  font-style: normal;
-  line-height: 1.6;
+	position: relative;
+	padding-left: 2.2em;
+	margin-bottom: 0.6em;
+	font-family: 'Verdana', serif;
+	color: #2c1d0e;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1.6;
 }
 
 ol > li::before {
-  counter-increment: section;
-  content: counter(section);
-  position: absolute;
-  left: 0;
-  top: 0.1em;
-  width: 1.6em;
-  height: 1.6em;
-  background-color: #D8A046;
-  color: white;
-  font-weight: bold;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 1.6em;
-  font-size: 0.9em;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
-  transition: background-color 0.3s ease;
+	counter-increment: section;
+	content: counter(section);
+	position: absolute;
+	left: 0;
+	top: 0.1em;
+	width: 1.6em;
+	height: 1.6em;
+	background-color: #D8A046;
+	color: white;
+	font-weight: bold;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 1.6em;
+	font-size: 0.9em;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+	transition: background-color 0.3s ease;
 }
 
 ol > li:hover::before {
-  background-color: #FFCC73;
+	background-color: #FFCC73;
 }
 
 ol > li > * {
-  font-weight: initial;
-  font-style: initial;
+	font-weight: initial;
+	font-style: initial;
 }
 
 /* swy: for the install guide numbered list sections */
@@ -590,7 +634,7 @@ img.hover-shadow {
 	background-color: #3b2b1a;
 	color: #f4e8d2;
 	padding: 25px 10px;
-	font-family: Verdana, Geneva, sans-serif;
+	font-family: 'Verdana', serif;
 	font-size: 14px;
 	border-top: 2px solid #d4b169;
 	box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.4);
