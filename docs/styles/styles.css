@@ -1,13 +1,17 @@
 body {
-	background-color: #261B1C;
-	background: -webkit-gradient(linear, left top, left bottom, from(#2C2021), to(#423032));
-	background: -webkit-linear-gradient(#2C2021, #423032);
-	background: -moz-linear-gradient(top, #2C2021, #423032);
-	background: -ms-linear-gradient(#2C2021, #423032);
-	background: -o-linear-gradient(#2C2021, #423032);
-	background: linear-gradient(to bottom, #2C2021 0%, #423032 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2C2021', endColorstr='#423032');
-	margin: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 15px;
+  color: #2c1d0e;
+  line-height: 1.6; 
+  background-color: #D6BB90;
+  background: -webkit-gradient(linear, left top, left bottom, from(#D6BB90), to(#CFB78C));
+  background: -webkit-linear-gradient(top, #D6BB90, #CFB78C);
+  background: -moz-linear-gradient(top, #D6BB90, #CFB78C);
+  background: -ms-linear-gradient(top, #D6BB90, #CFB78C);
+  background: -o-linear-gradient(top, #D6BB90, #CFB78C);
+  background: linear-gradient(to bottom, #D6BB90 0%, #CFB78C 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#D6BB90', endColorstr='#CFB78C');
 }
 
 @font-face {
@@ -45,93 +49,185 @@ div.Scrollmenu {
 	max-width: 1500px;
 	margin: auto;
 	margin-bottom: 0.254%;
-	background-image: url('../img/menutexture.png');
-	border: 1px solid #564D4D;
-	font-family: 'CaligulaDodgyMummy';
-	font-size: 17px;
+	background-color: #E0CAA6; /* fondo tipo pergamino */
+	border: 1px solid #E8D3AF;
+	font-family: 'CaligulaDodgyMummy', sans-serif;
+	font-size: 18px;
 	font-weight: bold;
 	text-align: center;
-	padding-top: 3px;
+	padding: 10px 0;
 	white-space: nowrap;
-	overflow: auto;
-	-webkit-overflow-scrolling: auto;
+	overflow-x: auto;
+	overflow-y: hidden;
+	-webkit-overflow-scrolling: touch;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
 }
 
 div.Scrollmenu a {
 	display: inline-block;
-	color: #DEA818;
-	padding: 14px;
+	color: #5C3A1A;
+	padding: 14px 18px;
 	text-decoration: none;
+	transition: color 0.3s ease, transform 0.2s ease;
+	position: relative;
 }
 
 div.Scrollmenu a:hover {
-	color: #C66E27;
-	text-decoration: underline;
+	color: #8A5B2F;
+	text-decoration: none;
+	transform: translateY(-2px);
 }
 
 div.Scrollmenu a.active {
 	color: #C66E27;
-	text-decoration: underline;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+div.Scrollmenu a::after {
+	content: "";
+	display: block;
+	height: 2px;
+	background: #8A5B2F;
+	transition: width 0.3s ease;
+	width: 0%;
+	margin: auto;
+}
+
+div.Scrollmenu a:hover::after,
+div.Scrollmenu a.active::after {
+	width: 60%;
 }
 
 h1 {
 	font-family: 'CaligulaDodgyMummy', sans-serif;
-	font-size: 23px;
-	color: #FF992E;
+	font-size: 28px;
+	font-weight: 800;
 	display: inline-block;
-	background: linear-gradient(to right,#FF992E 0%,#FFCD38 50%,#FF992E 100%);
-	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF992E',endColorstr='#FFCD38',GradientType=1);
+	color: #B35900;
+	background: linear-gradient(to right, #FF6A00 0%, #FFC100 40%, #FF6A00 100%);
+	background-clip: text;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	background-clip: text;
-	font-weight: bold;
-	text-shadow: none;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF6A00', endColorstr='#FFC100', GradientType=1);
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+	padding-bottom: 6px;
+	border-bottom: 2px solid rgba(255, 193, 0, 0.6);
 }
 
 h2 {
-	font-family: 'CaligulaDodgyMummy';
-	font-size: 18px;
-	color: #CE8F36;
+	font-family: 'CaligulaDodgyMummy', sans-serif;
+	font-size: 22px;
+	color: #8A5B2F; /* marrón medio elegante */
 }
 
 h3 {
-	font-family: 'CaligulaDodgyMummy';
-	font-size: 16px;
+	font-family: 'CaligulaDodgyMummy', sans-serif;
+	font-size: 18px;
 	color: #A66C2A;
+	margin-top: 1.2em;
+	margin-bottom: 0.3em;
 }
 
 a:link {
-	color: #CE8E37;
+	color: #C26E27; /* cobre anaranjado */
 	text-decoration: none;
+	transition: color 0.2s ease;
 }
 
 a:visited {
-	color: #E2BC88;
+	color: #9D5E25;
 }
 
 a:hover {
-	color: #E2BC88;
+	color: #8A5B2F;
 	text-decoration: underline;
 }
 
 ul {
 	list-style: none;
-	color: white;
+	color: #2c1d0e;
+	padding-left: 0;
+  	margin-left: 0;
+}
+
+ul li {
+	position: relative;
+	padding-left: 1.1em;
+	margin-bottom: 0.5em;
+	line-height: 1.6;
+	transition: color 0.3s ease;
 }
 
 ul li::before {
-	content: "\2022";
-	color: #C6AB27;
-	font-weight: bold;
-	display: inline-block; 
-	width: 1em;
-	margin-left: -1em;
+	content: "";
+	position: absolute;
+	left: 0.3em; /* más cerca del texto */
+	top: 0.55em; /* mejor alineado verticalmente */
+	width: 6px;
+	height: 6px;
+	border-radius: 2px;
+	background-color: #D8A046; /* Dorado suave */
+	box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+ul li:hover::before {
+	background-color: #FFCC73;
+	transform: scale(1.1);
+}
+
+ol {
+  counter-reset: section;
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+ol > li {
+  position: relative;
+  padding-left: 2.2em;
+  margin-bottom: 0.6em;
+  font-family: Verdana, sans-serif;
+  color: #2c1d0e;
+  font-weight: normal;
+  font-style: normal;
+  line-height: 1.6;
+}
+
+ol > li::before {
+  counter-increment: section;
+  content: counter(section);
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  width: 1.6em;
+  height: 1.6em;
+  background-color: #D8A046;
+  color: white;
+  font-weight: bold;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.6em;
+  font-size: 0.9em;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  transition: background-color 0.3s ease;
+}
+
+ol > li:hover::before {
+  background-color: #FFCC73;
+}
+
+ol > li > * {
+  font-weight: initial;
+  font-style: initial;
 }
 
 /* swy: for the install guide numbered list sections */
 ol > li, details, details h2 {
-	color: #CE8F36;
-	text-shadow: 0 0 2px black;
+	color: #8A5B2F;
+	font-family: 'Verdana', serif;
 }
 ol > li { /* swy: make the numbers in the list bold */
 	font-weight: bold;
@@ -144,8 +240,8 @@ ol > li > * { /* swy: reset the previous style for the inner non-numeric text */
 }
 
 p {
-	font-family: 'Verdana';
-	color: white;
+	font-family: 'Verdana', serif;
+	color: #220800;
 }
 
 .TextRed {
@@ -193,8 +289,9 @@ p {
 	width: 70%;
 	max-width: 1500px;
 	margin: auto;
-	background-color: #3B2326;
-	border: 1px solid #564D4D;
+	background-color: #F1E4CB;
+	border: 2px solid #FEFBF1;
+	border-radius: 8px;
 	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
 	font-size: 17px;
 	line-height: 26px;
@@ -202,20 +299,25 @@ p {
 }
 
 .Buttons{
-	background-color: #A07136;
-	border: none;
+	background-color: #d97700; /* tono naranja dorado */
 	color: white;
-	padding: 10px 25px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
+	border: none;
+	padding: 14px 28px;
+	font-size: 18px;
+	font-family: 'Verdana', serif;
+	font-weight: bold;
+	border-radius: 8px;
 	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+	display: inline-block;
+	text-decoration: none;
+	margin-top: 20px;
 }
 
 .Buttons:hover {
-	background-color: #775428
+	background-color: #c26b00;
+	transform: translateY(-2px);
 }
 
 .Buttons:active {
@@ -232,7 +334,7 @@ p {
 }
 
 .accordion {
-	background-color: #211817;
+	background-color: #E1D3B8;
 	color: #444;
 	cursor: pointer;
 	padding: 5px;
@@ -242,15 +344,16 @@ p {
 	outline: none;
 	font-size: 15px;
 	transition: 0.4s;
-	border: 1px solid #564D4D;
+	border: 1px solid #CC8E29;
+	border-radius: 8px;
 }
 
 .active, .accordion:hover {
-	background-color: #4a3634; 
+	background-color: #E1D3B8; 
 }
 
 .accordionChangelogs {
-	background-color: #211817;
+	background-color: #FAEBD0;
 	color: #444;
 	cursor: pointer;
 	padding: 5px;
@@ -260,11 +363,12 @@ p {
 	outline: none;
 	font-size: 15px;
 	transition: 0.4s;
-	border: 1px solid #564D4D;
+	border: 1px solid #CC8E29;
+	border-radius: 8px;
 }
 
 .active, .accordionChangelogs:hover {
-	background-color: #4A3634; 
+	background-color: #E1D3B8; 
 }
 
 .panel {
@@ -278,7 +382,6 @@ p {
 
 .bold {
 	font-weight: bold;
-	color: #E6E6E6;
 }
 
 * {
@@ -461,17 +564,39 @@ img.hover-shadow {
 }
 
 #CodeBox {
-	border: 1px solid #564D4D;
-	padding: 7px 20px 7px 20px;
-	background-color: #251718;
-    overflow-x: auto;
-    white-space: nowrap;
-	font-style: oblique;
-	margin-bottom: 4%;
+	background-color: #E1D3B8;
+	color: #444;
+	padding: 5px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-size: 15px;
+	transition: 0.4s;
+	border: 1px solid #CC8E29;
+	border-radius: 8px;
 }
 
 #footer {
 	text-align: center;
+	background-color: #3b2b1a;
+	color: #f4e8d2;
+	padding: 25px 10px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 14px;
+	border-top: 2px solid #d4b169;
+	box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+#footer a {
+	color: #ffcc88;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+#footer a:hover {
+	color: #ffe0a8;
+	text-decoration: underline;
 }
 
 #SphinxLogo {
@@ -480,4 +605,29 @@ img.hover-shadow {
 	margin-right: auto;
 	width: 30%;
 	max-width: 744px;
+}
+
+.footer-links {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 15px;
+}
+
+.footer-links a {
+	color: #ffcc88;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	display: flex;
+	align-items: center;
+	gap: 6px;
+}
+
+.footer-links a:hover {
+	color: #ffe0a8;
+	text-decoration: underline;
+}
+
+.footer-links i {
+	font-size: 15px;
 }
